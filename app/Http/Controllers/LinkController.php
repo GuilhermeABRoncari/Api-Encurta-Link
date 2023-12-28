@@ -21,7 +21,7 @@ class LinkController extends Controller
             'short_url' => $shortUrl,
         ]);
 
-        return response()->json(['short_url' => $shortUrl]);
+        return response()->json(['short_url' => 'localhost:8000/api/' . $shortUrl]);
     }
 
     public function redirecionar($codigo)
